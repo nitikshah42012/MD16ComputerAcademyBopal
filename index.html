@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD16 Computer Academy | Best IT Courses in Bopal | 60% Off</title>
+    <meta name="description" content="Top-rated computer academy in Bopal offering 60% discount on web development, graphic design, Python, digital marketing & more courses with certified trainers.">
+    <meta name="keywords" content="computer courses Bopal, IT training Ahmedabad, web development course, graphic design classes, Python programming, digital marketing institute, best computer academy, MD16 Computer Academy, affordable IT courses, 60% discount on computer classes">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--light-color);
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .course-card {
+            transition: all 0.4s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            background: white;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(0.95); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(0.95); }
+        }
+        
+        .discount-badge span {
+            font-size: 0.8rem;
+            display: block;
+            margin-top: -5px;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .testimonial-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(44, 62, 80, 0.3);
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(44, 62, 80, 0.2);
+        }
+        
+        .counter-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .counter-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .counter {
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .course-category-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .navbar {
+            transition: all 0.3s ease;
+            padding: 15px 0;
+            background: var(--primary-color) !important;
+        }
+        
+        .navbar.scrolled {
+            background: white !important;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        
+        .navbar.scrolled .nav-link {
+            color: var(--dark-color) !important;
+        }
+        
+        .navbar.scrolled .navbar-brand {
+            color: var(--dark-color) !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            margin: 0 10px;
+            color: white;
+        }
+        
+        .navbar.scrolled .nav-link {
+            color: var(--dark-color) !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .course-tab-content {
+            padding: 30px;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .stats-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .stats-section .counter {
+            color: white;
+        }
+        
+        .stats-section h5 {
+            color: var(--light-color);
+        }
+
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db; /* Blue color for MD16 */
+            --accent-color: #e74c3c;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+        
+        /* Navbar Brand Colors */
+        .navbar-brand .text-white {
+            transition: color 0.3s ease;
+        }
+        
+        .navbar.scrolled .navbar-brand .text-white {
+            color: var(--secondary-color) !important; /* Blue when scrolled */
+        }
+        
+        .navbar-brand .text-warning {
+            transition: color 0.3s ease;
+        }
+        
+        .navbar.scrolled .navbar-brand .text-warning {
+            color: #ffc107 !important; /* Keeps yellow when scrolled */
+        }
+        
+        /* Counter Styles */
+        .counter-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .counter-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .counter {
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .stats-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .stats-section .counter-box {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .stats-section .counter {
+            color: white;
+        }
+        
+        .stats-section h5 {
+            color: var(--light-color);
+            font-weight: 400;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .popup-content {
+            background-color: white;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active .popup-content {
+            transform: translateY(0);
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+        
+        .popup-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+        .popup-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .popup-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .popup-text {
+            color: var(--dark-color);
+        }
+        
+        .popup-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+            color: white;
+        }
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span class="text-white">MD16</span> <span class="text-warning">Computer Academy</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="https://wa.me/918980671996" class="btn btn-sm btn-success">
+                            <i class="fab fa-whatsapp me-1"></i> Enquire Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Transform Your Career With <span class="text-warning">IT Skills</span></h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">Join Bopal's most trusted computer academy with <span class="badge bg-warning text-dark fs-6">60% OFF</span> on all courses this month</p>
+                    <div class="d-flex gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="#courses" class="btn btn-light btn-lg px-4 fw-bold">Explore Courses</a>
+                        <a href="https://wa.me/918980671996" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mt-4 animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="d-flex">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle border border-3 border-white" width="40" height="40" alt="Student">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="Student">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="Student">
+                        </div>
+                        <div class="ms-3">
+                            <p class="mb-0 small">Trusted by <span class="fw-bold">1200+ Students</span></p>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-white ms-1">4.9/5 (380 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block animate__animated animate__fadeInRight animate__delay-1s">
+                    <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" class="img-fluid floating" alt="Learning Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Certified Courses</h4>
+                        <p class="mb-0">Industry-recognized certifications that add value to your resume and career prospects.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Expert Trainers</h4>
+                        <p class="mb-0">Learn from professionals with 10+ years of industry and teaching experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mx-auto">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Placement Support</h4>
+                        <p class="mb-0">Dedicated placement cell that helps you get placed in top IT companies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="MD16 Computer Academy Classroom" class="img-fluid rounded-3 shadow-lg animate__animated animate__fadeInLeft">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary bg-gradient mb-3">About Us</span>
+                    <h2 class="fw-bold mb-4">Why Choose <span class="text-primary">MD16 Computer Academy</span>?</h2>
+                    <p class="lead">Bopal's premier institute for practical IT education with industry-aligned curriculum.</p>
+                    <p>At MD16 Computer Academy, we bridge the gap between academic knowledge and industry requirements. Our project-based learning approach ensures you gain hands-on experience with real-world applications.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Practical Training</h5>
+                                    <p class="mb-0 small text-muted">80% practical sessions with live projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Flexible Timing</h5>
+                                    <p class="mb-0 small text-muted">Morning, afternoon & evening batches</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Lab Facilities</h5>
+                                    <p class="mb-0 small text-muted">Modern computer lab with latest software</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Affordable Fees</h5>
+                                    <p class="mb-0 small text-muted">Quality education at reasonable prices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="#courses" class="btn btn-gradient btn-lg px-4">View Our Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <div class="counter">1200+</div>
+                        <h5>Students Trained</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <div class="counter">25+</div>
+                        <h5>Courses Offered</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <div class="counter">15+</div>
+                        <h5>Certified Trainers</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-box">
+                        <div class="counter">98%</div>
+                        <h5>Satisfaction Rate</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+ <!-- Popup HTML -->
+ <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <span class="popup-close" id="popupClose">&times;</span>
+        <h3 class="popup-title">Bopal's #1 IT and Multimedia Education Provider</h3>
+        
+        <div class="popup-item">
+            <div class="popup-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="popup-text">
+                <strong>Call Us:</strong> +91 8980671996
+            </div>
+        </div>
+        
+        <div class="popup-item">
+            <div class="popup-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="popup-text">
+                <strong>Chat on WhatsApp:</strong> +91 8980671996
+            </div>
+        </div>
+        
+        <div class="popup-item">
+            <div class="popup-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="popup-text">
+                <strong>Address:</strong> Vishwanath Samam, EL-14, opp. Club O7 Road, Shela, Ahmedabad, Gujarat 380058
+            </div>
+        </div>
+        
+        <div class="popup-item">
+            <div class="popup-icon">
+                <i class="fas fa-directions"></i>
+            </div>
+            <div class="popup-text">
+                <strong>Directions:</strong> <a href="https://goo.gl/maps/yourmapurl" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+        
+        <a href="https://wa.me/918980671996" class="popup-btn">
+            <i class="fab fa-whatsapp"></i> Enquire Now
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-gradient mb-3">Our Courses</span>
+                <h2 class="fw-bold mb-3">Popular <span class="text-primary">Courses</span></h2>
+                <p class="lead text-muted">Get 60% discount on all courses this month. Limited seats available!</p>
+            </div>
+            
+            <ul class="nav nav-pills mb-4 justify-content-center" id="course-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All Courses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="development-tab" data-bs-toggle="pill" data-bs-target="#development" type="button" role="tab">Development</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="design-tab" data-bs-toggle="pill" data-bs-target="#design" type="button" role="tab">Design</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="marketing-tab" data-bs-toggle="pill" data-bs-target="#marketing" type="button" role="tab">Marketing</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="professional-tab" data-bs-toggle="pill" data-bs-target="#professional" type="button" role="tab">Professional</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="course-tabs-content">
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Course 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card course-card h-100">
+                                <div class="discount-badge">
+                                    <span>60%</span>
+                                    <span>OFF</span>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top course-category-img" alt="Web Development Course">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="badge bg-primary">Development</span>
+                                        <span class="text-muted"><i class="far fa-clock me-1"></i> 3 Months</span>
+                                    </div>
+                                    <h5 class="card-title">Full Stack Web Development</h5>
+                                    <p class="card-text">Master front-end and back-end technologies to build complete web applications from scratch.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5"><del>₹25,000</del></span>
+                                            <span class="fw-bold fs-5 ms-2">₹10,000</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-gradient">Enroll Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card course-card h-100">
+                                <div class="discount-badge">
+                                    <span>60%</span>
+                                    <span>OFF</span>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top course-category-img" alt="Graphic Design Course">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="badge bg-success">Design</span>
+                                        <span class="text-muted"><i class="far fa-clock me-1"></i> 2 Months</span>
+                                    </div>
+                                    <h5 class="card-title">Professional Graphic Design</h5>
+                                    <p class="card-text">Master Adobe Creative Suite to create stunning visuals for print and digital media.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5"><del>₹18,000</del></span>
+                                            <span class="fw-bold fs-5 ms-2">₹7,200</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-gradient">Enroll Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card course-card h-100">
+                                <div class="discount-badge">
+                                    <span>60%</span>
+                                    <span>OFF</span>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" class="card-img-top course-category-img" alt="Digital Marketing Course">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="badge bg-warning text-dark">Marketing</span>
+                                        <span class="text-muted"><i class="far fa-clock me-1"></i> 2.5 Months</span>
+                                    </div>
+                                    <h5 class="card-title">Digital Marketing Mastery</h5>
+                                    <p class="card-text">Comprehensive training in SEO, SEM, Social Media, Email Marketing, Analytics and Google Ads.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div>
+                                            <span class="text-danger fw-bold fs-5"><del>₹20,000</del></span>
+                                            <span class="fw-bold fs-5 ms-2">₹8,000</span>
+                                        </div>
+                                        <a href="#" class="btn btn-sm btn-gradient">Enroll Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other tab panes would go here -->
+                <div class="tab-pane fade" id="development" role="tabpanel">
+                    <!-- Development courses content -->
+                </div>
+                <div class="tab-pane fade" id="design" role="tabpanel">
+                    <!-- Design courses content -->
+                </div>
+                <div class="tab-pane fade" id="marketing" role="tabpanel">
+                    <!-- Marketing courses content -->
+                </div>
+                <div class="tab-pane fade" id="professional" role="tabpanel">
+                    <!-- Professional courses content -->
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-lg px-4">View All 25+ Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-gradient mb-3">Gallery</span>
+                <h2 class="fw-bold mb-3">Our <span class="text-primary">Campus</span> & <span class="text-primary">Activities</span></h2>
+                <p class="lead text-muted">Take a virtual tour of our academy and student activities</p>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" class="img-fluid rounded-3 shadow-sm" alt="Classroom">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80">
+                        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="img-fluid rounded-3 shadow-sm" alt="Computer Lab">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-3 shadow-sm" alt="Students Learning">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-3 shadow-sm" alt="Workshop">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-3 shadow-sm" alt="Certificate Distribution">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" class="img-fluid rounded-3 shadow-sm" alt="Group Project">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-gradient mb-3">Testimonials</span>
+                <h2 class="fw-bold mb-3">What Our <span class="text-primary">Students</span> Say</h2>
+                <p class="lead text-muted">Hear from our successful students about their learning experience</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="60" alt="Student">
+                            <div>
+                                <h5 class="mb-1">Priya Patel</h5>
+                                <div class="text-warning small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The Full Stack Web Development course at MD16 completely transformed my career. The practical approach helped me land a job as a front-end developer within 2 months of completing the course."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="60" alt="Student">
+                            <div>
+                                <h5 class="mb-1">Rahul Sharma</h5>
+                                <div class="text-warning small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"I took the Python Programming course and was amazed by the depth of knowledge our trainer had. The real-world projects gave me confidence to start freelancing immediately after completion."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" width="60" alt="Student">
+                            <div>
+                                <h5 class="mb-1">Neha Gupta</h5>
+                                <div class="text-warning small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The Graphic Design course exceeded my expectations. The faculty helped me build a strong portfolio that got me multiple job offers. The 60% discount made it incredibly affordable too!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Ready to Start Your IT Career?</h2>
+                    <p class="lead mb-0">Limited seats available for the upcoming batches. Enroll now to avail 60% discount!</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="https://wa.me/918980671996" class="btn btn-light btn-lg px-4 me-2">
+                        <i class="fab fa-whatsapp"></i> Chat Now
+                    </a>
+                    <a href="tel:+918980671996" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-primary bg-gradient mb-3">Contact Us</span>
+                    <h2 class="fw-bold mb-4">Get In <span class="text-primary">Touch</span></h2>
+                    <p class="lead">Have questions about our courses? We're happy to help!</p>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon" style="width: 50px; height: 50px; font-size: 20px;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Our Location</h5>
+                                <p class="mb-0">Vishwanath Samam, EL-14, opp. Club O7 Road, Shela, Ahmedabad, Gujarat 380058</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon" style="width: 50px; height: 50px; font-size: 20px;">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Call Us</h5>
+                                <p class="mb-0">+91 8980671996</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon" style="width: 50px; height: 50px; font-size: 20px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0">info@md16academy.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon" style="width: 50px; height: 50px; font-size: 20px;">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Working Hours</h5>
+                                <p class="mb-0">Monday to Saturday: 10:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-primary fs-4"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-primary fs-4"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-primary fs-4"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary fs-4"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="course" class="form-label">Course Interested In</label>
+                                    <select class="form-select" id="course">
+                                        <option selected>Select a course</option>
+                                        <option>Full Stack Web Development</option>
+                                        <option>Professional Graphic Design</option>
+                                        <option>Python Programming</option>
+                                        <option>Digital Marketing Mastery</option>
+                                        <option>Data Science with Python</option>
+                                        <option>Mobile App Development</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-gradient w-100 py-2 fw-bold">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="container-fluid p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4438455810587!2d72.45254967509142!3d23.00747007918425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b2db2dfdfed%3A0xfad6221dd67bbf1a!2sMD16%20Computer%20Academy%20%7C%20Bopal!5e0!3m2!1sen!2sin!4v1744398427999!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918980671996" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" class="img-fluid" id="galleryModalImg" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold fs-4 mb-3"><span class="text-white">MD16</span> <span class="text-warning">Computer Academy</span></h5>
+                    <p>Bopal's premier institute for practical IT education with industry-aligned courses and expert trainers.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-white text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Popular Courses</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Full Stack Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Professional Graphic Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Python Programming</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Digital Marketing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Data Science with Python</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Vishwanath Samam, EL-14, opp. Club O7 Road, Shela, Ahmedabad, Gujarat 380058</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> +91 8980671996</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@md16academy.com</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="https://wa.me/918980671996" class="btn btn-success btn-sm">
+                            <i class="fab fa-whatsapp me-1"></i> Chat Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 MD16 Computer Academy. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by MD16 Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Gallery modal
+        const galleryModal = document.getElementById('galleryModal');
+        if (galleryModal) {
+            galleryModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const imgSrc = button.getAttribute('data-bs-img');
+                const modalImg = galleryModal.querySelector('#galleryModalImg');
+                modalImg.src = imgSrc;
+            });
+        }
+
+
+
+
+// Popup functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupClose = document.getElementById('popupClose');
+    
+    // Check if popup has been shown less than 2 times
+    let popupShown = localStorage.getItem('popupShown') || 0;
+    
+    if (popupShown < 2) {
+        setTimeout(function() {
+            popupOverlay.classList.add('active');
+            localStorage.setItem('popupShown', parseInt(popupShown) + 1);
+        }, 3000); // Show after 3 seconds
+    }
+    
+    // Close popup when X is clicked
+    popupClose.addEventListener('click', function() {
+        popupOverlay.classList.remove('active');
+    });
+    
+    // Close popup when clicking outside content
+    popupOverlay.addEventListener('click', function(e) {
+        if (e.target === popupOverlay) {
+            popupOverlay.classList.remove('active');
+        }
+    });
+});
+
+
+
+        
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+        
+    </script>
+</body>
+</html>
